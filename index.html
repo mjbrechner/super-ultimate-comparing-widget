@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Super Ultimate Comparing Widget</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Profile picture/favicon created by M.J. Brechner © 2022 -->
+    <link rel="shortcut icon"
+        href="https://raw.githubusercontent.com/mjbrechner/diacritics-eraser/main/images/profile-pic.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Super Ultimate Comparing Widget</h1>
+    </header>
+    <main>
+        <div class="which-is-best-box">
+            <h2>Which is best?</h2>
+            <div class="comparison-box">
+                <div class="comparison-item" id="item1" onclick="item1Chosen()">A</div>
+                <div class="comparison-item" id="item2" onclick="item2Chosen()">B</div>
+            </div>
+            <button id="refresh-button" onclick="refreshComparison()">Refresh!</button>
+        </div>
+
+        <hr>
+        <div>Add new item</div>
+        <input id="add-item-textbox" type="text" col="10" row="10"></input>
+        <button onclick="addItem()">Add</button>
+
+        <hr>
+        <div class="stats-box">
+            <div>Stats!</div>
+           
+                <ul id="stats-info"></ul>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2022 <a href="https://github.com/mjbrechner">M.J. Brechner</a></p>
+        <!-- Profile picture/favicon created by M.J. Brechner © 2022 -->
+        <img class="profile-pic"
+            src="https://raw.githubusercontent.com/mjbrechner/diacritics-eraser/main/images/profile-pic.png">
+    </footer>
+    </footer>
+    <script src="javascript/list-of-items.js" defer></script>
+    <script src="javascript/index.js" defer></script>
+    <script src="javascript/add-item.js" defer></script>
+</body>
+
+</html>
