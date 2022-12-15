@@ -10,9 +10,11 @@
     <link rel="shortcut icon"
         href="https://raw.githubusercontent.com/mjbrechner/diacritics-eraser/main/images/profile-pic.png">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="javascript/list-of-items.js" defer></script>
+     <script src="javascript/refresh-comparison.js" defer></script>
 </head>
 
-<body>
+<body onload="refreshComparison()">
 
     <header>
         <h1>Super Ultimate Comparing Widget</h1>
@@ -48,7 +50,6 @@
             src="https://raw.githubusercontent.com/mjbrechner/diacritics-eraser/main/images/profile-pic.png">
     </footer>
     </footer>
-    <script src="javascript/list-of-items.js" defer></script>
     <script src="javascript/index.js" defer></script>
     <script src="javascript/add-item.js" defer></script>
 </body>
