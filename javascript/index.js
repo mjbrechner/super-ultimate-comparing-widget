@@ -7,51 +7,29 @@ let itemChoice1;
 let itemChoice2;
 
 function CountingUpTheWinners() {
+    let mostRecentWinner = listOfWinners.findLast((element) => element);
+    let count = 0;
 
-    // if (statsInfo.firstChild) {
-    //     while (statsInfo.firstChild) {
-    //         statsInfo.removeChild();
-    //     }
-    // }
-
-    let count;
-
-    for (let i = 0; i <= listOfItems.length; i++) {
-        count = 0;
-        listOfWinners.forEach(element => {
-            if (element === listOfWinners[i]) {
-                count += 1;
-            }
-        });
-        // console.log(`There have been ${count} choosings of ${listOfWinners[i]}!`);
-
-
-        if ((count >= 1) && (listOfWinners[i])) {
-            listOfWinnersUnique.push(`${listOfWinners[i]} has been chosen ${count} times.`);
-            let addItemToStatsList = document.createElement("li");
-            statsInfo.appendChild(addItemToStatsList);
-            addItemToStatsList.setAttribute("class", "stats-info-list-item");
-            addItemToStatsList.innerText = `${listOfWinners[i]} has been chosen ${count} times.`;
+    listOfWinners.forEach(e => {
+        if (e === mostRecentWinner) {
+            count += 1;
         }
-    }
-
-    // Erase duplicates
-    listOfWinnersUnique = [...new Set(listOfWinnersUnique)];
-    console.log(listOfWinnersUnique);
+    });
+    document.getElementById("stats-info").innerText = `${mostRecentWinner} has been chosen ${count} times.`;
 }
 
 
 
 function item1Chosen() {
     listOfWinners.push(document.getElementById("item1").innerText);
-    refreshComparison();
     CountingUpTheWinners();
-    // console.log(listOfWinners);
+    refreshComparison();
+    console.log(listOfWinners);
 }
 
 function item2Chosen() {
     listOfWinners.push(document.getElementById("item2").innerText);
-    refreshComparison();
     CountingUpTheWinners();
-    // console.log(listOfWinners);
+    refreshComparison();
+    console.log(listOfWinners);
 }
