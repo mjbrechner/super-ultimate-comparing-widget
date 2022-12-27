@@ -1,7 +1,7 @@
 'use strict';
 
 let listOfWinners = [];
-let listOfWinnersUnique = [];
+// let listOfWinnersUnique = [];
 const statsInfo = document.getElementById("stats-info");
 let itemChoice1;
 let itemChoice2;
@@ -21,15 +21,23 @@ function CountingUpTheWinners() {
 
 
 function item1Chosen() {
-    listOfWinners.push(document.getElementById("item1").innerText);
-    CountingUpTheWinners();
-    refreshComparison();
-    console.log(listOfWinners);
+    // Add the chosen item to listOfWinners unless it is a choice that is n/a.
+    let winningItem = document.getElementById("item1").innerText;
+    if (winningItem !== `n/a`) {
+        listOfWinners.push(winningItem);
+        CountingUpTheWinners();
+        refreshComparison();
+        console.log(listOfWinners);
+    }
 }
 
 function item2Chosen() {
-    listOfWinners.push(document.getElementById("item2").innerText);
-    CountingUpTheWinners();
-    refreshComparison();
-    console.log(listOfWinners);
+    // Add the chosen item to listOfWinners unless it is a choice that is n/a.
+    let winningItem = document.getElementById("item2").innerText;
+    if (winningItem !== `n/a`) {
+        listOfWinners.push(winningItem);
+        CountingUpTheWinners();
+        refreshComparison();
+        console.log(listOfWinners);
+    }
 }

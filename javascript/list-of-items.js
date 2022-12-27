@@ -1,3 +1,3 @@
 'use strict';
 
-let listOfItems = ["cats", "dogs", "elephants", "ice cream", "mugs", "sitcoms"];
+let listOfItems = ["CATS", "DOGS", "ELEPHANTS", "ICE CREAM", "MUGS", "SITCOMS"];

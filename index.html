@@ -21,7 +21,7 @@
     </header>
     <main>
         <div class="which-is-best-box">
-            <h2>Which is best?</h2>
+            <h2 id="instructions">Which is best?</h2>
             <div class="comparison-box">
                 <div class="comparison-item" id="item1" onclick="item1Chosen()"></div>
                 <div class="comparison-item" id="item2" onclick="item2Chosen()"></div>
@@ -33,6 +33,7 @@
         <div>Add new item</div>
         <input id="add-item-textbox" type="text" col="10" row="10"></input>
         <button onclick="addItem()">Add</button>
+        <button onclick="deleteAllItems()">🗑️</button>
 
         <hr>
         <div class="stats-box">
@@ -52,6 +53,7 @@
     </footer>
     <script src="javascript/index.js" defer></script>
     <script src="javascript/add-item.js" defer></script>
+    <script src="javascript/delete-all-items.js" defer></script>
 </body>
 
 </html>
