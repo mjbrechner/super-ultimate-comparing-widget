@@ -13,7 +13,9 @@ align-items: center;
 .comparison-box {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
     gap: 5px;
 }
 
@@ -54,6 +56,7 @@ footer {
 
     footer {
         flex-direction: row;
+        justify-content: center;
         margin-top: 1.25em;
         font-size: .9em;
     }
