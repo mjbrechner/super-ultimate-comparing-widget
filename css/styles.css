@@ -1,7 +1,19 @@
+/* Color helped by  
+#1862A3
+#D8ECFE
+#7FBBF0
+#A37936
+#F0C47F
+*/
+
+* {
+    background-color:#D8ECFE;
+    color: #1862A3;
+}
+
 body {
     text-align: center;
 }
-
 
 .which-is-best-box {
     display: flex;
@@ -20,21 +32,38 @@ body {
 }
 
 .comparison-item {
+    display: flex;
+    background-color: #1862A3;
+    color:#F0C47F;
+    border-color: #7FBBF0;
+    text-shadow: #A37936 1px 1px 10px;
     width: 100%;
-    height: 100%;
-    padding: 3px 10px 3px;
+    height: 2.5em;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
     border-style: solid;
     border-radius: 10px;
+    font-size: 2em;
     cursor: pointer;
 }
 
 #refresh-button {
     width: 10em;
-    border-radius: 5px;
 }
 
 button {
+    background-color: #7FBBF0;
+    color:#1862A3;
+    border-color: #1862A3;
+    text-shadow: #D8ECFE 1px 1px 1px;
+    border-radius: 5px;
     cursor: pointer;
+}
+
+input {
+    background-color:white;
+    border-radius: 5px;
 }
 
 footer {
