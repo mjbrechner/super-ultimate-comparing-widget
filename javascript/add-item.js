@@ -13,10 +13,17 @@ function addItem() {
 
     if ((itemToBeAdded.value.trim() !== "") && (isThereADuplicate === false)) { // Make sure there is something actually there to add
         listOfItems.push(itemToBeAdded.value);
+        alert(`${itemToBeAdded.value} added to the list of possibilities!`);
         itemToBeAdded.value = "";
+
+
+        console.log(`listOfItems now reads: ${listOfItems}. There are ${listOfItems.length} items.`);
+
+
+        refreshComparison(); // Once the item is added, refresh the choices currently being presented.
+    } else { // If the button has been clicked but there is nothing to add
+        alert("Type in a new entry.");
+        itemToBeAdded.value = ""; // In case the user just added blank spaces, clear out the input box.
     }
 
-    console.log(`listOfItems now reads: ${listOfItems}. There are ${listOfItems.length} items.`);
-    // Once the item is added, refresh the choices currently being presented.
-    refreshComparison();
 }

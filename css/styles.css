@@ -4,10 +4,10 @@ body {
 
 
 .which-is-best-box {
-display: flex;
-flex-direction: column;
-gap: 10px;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
 
 .comparison-box {
@@ -25,11 +25,16 @@ align-items: center;
     padding: 3px 10px 3px;
     border-style: solid;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 #refresh-button {
-width: 10em;
-border-radius: 5px;
+    width: 10em;
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
 }
 
 footer {
@@ -48,11 +53,11 @@ footer {
 /*tablet query*/
 @media only screen and (min-width: 768px) {
 
-.comparison-box {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
+    .comparison-box {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
 
     footer {
         flex-direction: row;
