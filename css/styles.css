@@ -1,4 +1,4 @@
-/* Color helped by  
+/* Palette inspired by https://color.adobe.com/ 
 #1862A3
 #D8ECFE
 #7FBBF0
@@ -48,6 +48,11 @@ body {
     cursor: pointer;
 }
 
+.comparison-item:active {
+    border-color:  #F0C47F;
+    transform: translate(1px);
+}
+
 #refresh-button {
     width: 10em;
 }
@@ -58,7 +63,13 @@ button {
     border-color: #1862A3;
     text-shadow: #D8ECFE 1px 1px 1px;
     border-radius: 5px;
+    box-shadow: 2px 2px #A37936;
     cursor: pointer;
+}
+
+button:active {
+    box-shadow: 1px 1px #A37936;
+    transform: translate(1px);
 }
 
 input {
