@@ -9,6 +9,12 @@
 * {
     background-color:#D8ECFE;
     color: #1862A3;
+    font-family: 'Righteous', cursive;
+}
+
+h1 {
+    text-shadow: 2px 2px #F0C47F;
+    font-size: 3em;
 }
 
 body {
@@ -75,6 +81,10 @@ button:active {
 input {
     background-color:white;
     border-radius: 5px;
+}
+
+#stats-info {
+text-shadow: 1px 1px #F0C47F;
 }
 
 footer {
