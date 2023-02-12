@@ -7,18 +7,28 @@
 */
 
 * {
-    background-color:#D8ECFE;
+    background-color: #D8ECFE;
     color: #1862A3;
     font-family: 'Righteous', cursive;
 }
 
 h1 {
+    margin: .25em;
     text-shadow: 2px 2px #F0C47F;
-    font-size: 3em;
+    font-size: 2.2em;
+}
+
+h2 {
+    margin: .25em;
+    font-size: 1.1em;
 }
 
 body {
     text-align: center;
+}
+
+main {
+    font-size: 1.05em;
 }
 
 .which-is-best-box {
@@ -40,22 +50,22 @@ body {
 .comparison-item {
     display: flex;
     background-color: #1862A3;
-    color:#F0C47F;
+    color: #F0C47F;
     border-color: #7FBBF0;
     text-shadow: #A37936 1px 1px 10px;
     width: 100%;
-    height: 2.5em;
+    height: 2em;
     align-items: center;
     justify-content: center;
     padding: 3px;
     border-style: solid;
     border-radius: 10px;
-    font-size: 2em;
+    font-size: 1.05em;
     cursor: pointer;
 }
 
 .comparison-item:active {
-    border-color:  #F0C47F;
+    border-color: #F0C47F;
     transform: translate(1px);
 }
 
@@ -65,9 +75,13 @@ body {
 
 button {
     background-color: #7FBBF0;
-    color:#1862A3;
-    border-color: #1862A3;
+    color: #1862A3;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.05em;
+    padding: 2px;
     text-shadow: #D8ECFE 1px 1px 1px;
+    border-color: #1862A3;
     border-radius: 5px;
     box-shadow: 2px 2px #A37936;
     cursor: pointer;
@@ -78,13 +92,18 @@ button:active {
     transform: translate(1px);
 }
 
-input {
-    background-color:white;
+#add-item-textbox {
+    background-color: white;
+    width: 45%;
+    height: fit-content;
+    font-size: 1.05em;
+    margin: 4px;
+    padding: 2px;
     border-radius: 5px;
 }
 
 #stats-info {
-text-shadow: 1px 1px #F0C47F;
+    text-shadow: 1px 1px #F0C47F;
 }
 
 footer {
@@ -100,13 +119,53 @@ footer {
     height: 3em;
 }
 
+/*mid-size phone and above query*/
+@media only screen and (min-width: 360px) {
+
+    .comparison-item {
+        font-size: 1.35em;
+    }
+}
+
 /*tablet query*/
 @media only screen and (min-width: 768px) {
+
+    h1 {
+        margin: .35em;
+        font-size: 2.5em;
+    }
+
+    h2 {
+        margin: .35em;
+        font-size: 1.25em;
+    }
+
+    main {
+        font-size: 1.15em;
+    }
 
     .comparison-box {
         display: flex;
         flex-direction: row;
         gap: 10px;
+    }
+
+    .comparison-item {
+        height: 2.35em;
+        padding: 6px;
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 1.15em;
+        padding: 3px;
+    }
+
+    #add-item-textbox {
+        width: 30%;
+        font-size: 1.15em;
+        margin: 6px;
+        padding: 3px;
     }
 
     footer {
@@ -124,6 +183,39 @@ footer {
 
 /*desktop query*/
 @media only screen and (min-width: 992px) {
+
+    h1 {
+        margin: .5em;
+        font-size: 3em;
+    }
+
+    h2 {
+        margin: .5em;
+        font-size: 1.5em;
+    }
+
+    main {
+        font-size: 1.25em;
+    }
+
+    .comparison-item {
+        height: 2.5em;
+        padding: 8px;
+        font-size: 2em;
+    }
+
+    button {
+        font-size: 1.25em;
+        padding: 5px;
+    }
+
+    #add-item-textbox {
+        width: 20%;
+        font-size: 1.25em;
+        margin: 10px;
+        padding: 5px;
+    }
+
     footer {
         font-size: 1em;
     }
