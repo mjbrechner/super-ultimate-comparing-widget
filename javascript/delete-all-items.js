@@ -8,6 +8,7 @@ function deleteAllItems() {
         console.log("listOfWinners before: " + listOfWinners);
         listOfItems.length = 0;
         listOfWinners.length = 0;
+        statsInfo.style.visibility = "hidden";
         refreshComparison();
         console.log("listOfItems after: " + listOfItems);
         console.log("listOfWinners after: " + listOfWinners);

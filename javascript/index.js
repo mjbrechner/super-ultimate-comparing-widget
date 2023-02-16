@@ -1,7 +1,6 @@
 'use strict';
 
 let listOfWinners = [];
-// let listOfWinnersUnique = [];
 const statsInfo = document.getElementById("stats-info");
 let itemChoice1;
 let itemChoice2;
@@ -15,7 +14,8 @@ function CountingUpTheWinners() {
             count += 1;
         }
     });
-    document.getElementById("stats-info").innerText = `${mostRecentWinner} has been chosen ${count} times.`;
+    statsInfo.innerText = `${mostRecentWinner} has been chosen ${count} times.`;
+    statsInfo.style.visibility = "visible";
 }
 
 
