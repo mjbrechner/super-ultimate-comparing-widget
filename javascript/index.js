@@ -18,8 +18,6 @@ function CountingUpTheWinners() {
     statsInfo.style.visibility = "visible";
 }
 
-
-
 function item1Chosen() {
     // Add the chosen item to listOfWinners unless it is a choice that is n/a.
     let winningItem = document.getElementById("item1").innerText;

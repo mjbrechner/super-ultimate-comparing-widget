@@ -16,9 +16,7 @@ function addItem() {
         alert(`${itemToBeAdded.value} added to the list of possibilities!`);
         itemToBeAdded.value = "";
 
-
         console.log(`listOfItems now reads: ${listOfItems}. There are ${listOfItems.length} items.`);
-
 
         refreshComparison(); // Once the item is added, refresh the choices currently being presented.
     } else { // If the button has been clicked but there is nothing to add
